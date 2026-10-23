@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanLens - Indian Mobile Recharge Tariff Analytics</title>
+    <meta name="description" content="Calculate the true daily cost of prepaid mobile plans across Jio, Airtel, Vi, and BSNL. Compare up to 3 plans side-by-side with PlanLens.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #3730A3;
+            --slate-50: #F8FAFC;
+            --slate-100: #F1F5F9;
+            --slate-200: #E2E8F0;
+            --slate-600: #475569;
+            --slate-800: #1E293B;
+            --slate-900: #0F172A;
+            --emerald: #059669;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: var(--slate-50); color: var(--slate-800); line-height: 1.6; }
+        header { background: white; border-bottom: 1px solid var(--slate-200); padding: 1.25rem 2rem; position: sticky; top: 0; z-index: 10; }
+        .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .brand { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 1.35rem; color: var(--slate-900); text-decoration: none; }
+        .brand-dot { width: 10px; height: 10px; background: var(--primary); border-radius: 50%; }
+        .nav-links a { margin-left: 1.5rem; text-decoration: none; color: var(--slate-600); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary); }
+        .hero { max-width: 1100px; margin: 3rem auto; padding: 0 1.5rem; text-align: center; }
+        .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: #EEF2FF; color: var(--primary); font-size: 0.85rem; font-weight: 700; border-radius: 999px; margin-bottom: 1.5rem; }
+        h1 { font-size: 2.75rem; font-weight: 800; color: var(--slate-900); letter-spacing: -0.03em; margin-bottom: 1rem; line-height: 1.2; }
+        .subtitle { font-size: 1.2rem; color: var(--slate-600); max-width: 720px; margin: 0 auto 2rem; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--primary); color: white; padding: 0.9rem 2rem; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4); transition: transform 0.15s ease; }
+        .cta-btn:hover { transform: translateY(-2px); background: var(--primary-dark); }
+        .features { max-width: 1100px; margin: 4rem auto; padding: 0 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: white; padding: 2rem; border-radius: 16px; border: 1px solid var(--slate-200); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03); }
+        .card h3 { font-size: 1.2rem; color: var(--slate-900); margin-bottom: 0.5rem; font-weight: 700; }
+        .card p { font-size: 0.95rem; color: var(--slate-600); }
+        .disclaimer-section { max-width: 1100px; margin: 3rem auto; padding: 2rem 1.5rem; background: white; border-radius: 16px; border: 1px solid var(--slate-200); font-size: 0.85rem; color: var(--slate-600); }
+        .disclaimer-section h4 { color: var(--slate-900); font-size: 0.95rem; margin-bottom: 0.5rem; }
+        footer { background: var(--slate-900); color: var(--slate-200); padding: 3rem 1.5rem; text-align: center; font-size: 0.9rem; }
+        footer a { color: #A5B4FC; text-decoration: none; margin: 0 0.75rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="/" class="brand">
+                <span class="brand-dot"></span>
+                PlanLens
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms</a>
+                <a href="/app-ads.txt">app-ads.txt</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="badge">🚀 100% Independent & Privacy-First</div>
+        <h1>Stop Guessing Which Mobile Recharge Gives You the Best Value.</h1>
+        <p class="subtitle">PlanLens is an independent tariff analytics utility designed to calculate the true daily cost of prepaid mobile plans across Jio, Airtel, Vi, and BSNL.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.planlens" class="cta-btn" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 01-.61-.926V2.74c.148-.372.368-.692.609-.926zM15.207 13.414l2.457 2.457-11.83 6.829 9.373-9.286zm0-2.828L5.834 1.3l11.83 6.83-2.457 2.456zm1.414 1.414l3.129 1.807c.813.469.813 1.233 0 1.703l-3.129 1.806-2.121-2.12 2.121-2.196z"/></svg>
+            Get it on Google Play
+        </a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="card">
+            <h3>📊 True Daily Cost & ₹/GB Metrics</h3>
+            <p>See exact mathematical cost per day (MRP ÷ Validity) and 30-day normalized expenditure across any billing cycle.</p>
+        </div>
+        <div class="card">
+            <h3>⚖️ Side-by-Side Comparator</h3>
+            <p>Compare up to 3 plans head-to-head across data, calling, SMS, validity, and OTT allowances with instant bento highlights.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Unlimited 5G Filter</h3>
+            <p>Instantly differentiate between basic 4G FUP data and uncapped True 5G data offerings across all 22 telecom circles.</p>
+        </div>
+        <div class="card">
+            <h3>🔔 Family SIM Expiry Tracker</h3>
+            <p>Track validity for up to 5 family SIM cards with private on-device local alerts (3 days, 1 day, and on expiry). Zero SMS/Contacts permissions required.</p>
+        </div>
+        <div class="card">
+            <h3>🏛️ TRAI Mandated Vouchers</h3>
+            <p>Dedicated filters for Telecom Regulatory Authority of India (TRAI) mandated 30-day and calendar-month validity plans.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 100% Offline & Private</h3>
+            <p>Zero tracking, zero analytics profiling. All saved SIM details remain strictly in your phone's encrypted local storage.</p>
+        </div>
+    </section>
+
+    <div class="disclaimer-section">
+        <h4>NOMINATIVE FAIR USE & REGULATORY DISCLAIMER</h4>
+        <p>PlanLens is an independent consumer tariff comparison utility developed by Sudeep Kumar. It is NOT affiliated with, sponsored by, endorsed by, or partnered with Reliance Jio Infocomm Ltd., Bharti Airtel Ltd., Vodafone Idea Ltd. (Vi), Bharat Sanchar Nigam Ltd. (BSNL), Mahanagar Telephone Nigam Ltd. (MTNL), or the Telecom Regulatory Authority of India (TRAI). All brand names, operator trademarks, and plan names are used strictly for nominative consumer identification and comparative analysis under Section 30 of the Indian Trade Marks Act, 1999.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PlanLens. Developed by Sudeep Kumar (Sonipat, Haryana, India).</p>
+        <p style="margin-top: 0.75rem;">
+            <a href="mailto:slade.nes@gmail.com">Developer Contact</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/app-ads.txt">app-ads.txt</a>
+        </p>
+    </footer>
+</body>
+</html>
